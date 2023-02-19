@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A website about beauty</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="IMG-20220105-WA0047.jpg"
+    />
+    <style rel="stylesheet">
+
+      header{
+        padding: 0px;
+        background-image: url(pexels-irina-iriser-1408221.jpg);
+        background-position: 100%;
+        block-size: 100px;
+        padding-top: 0px;    
+        position:absolute;
+        left:0;
+        top:0;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      h1{text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      body{
+       background-color: black;
+       margin: 0;
+       padding: 0; }
+
+       h2{
+        color: transparent;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position:absolute;
+        bottom: 40%;
+        text-align: center;
+        margin-top: 150px;
+        font-size: 20px;
+        background-image: url(https://media.giphy.com/media/CA8L6kltZ6Bfq2M4yq/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;    
+      }
+
+
+       button {
+  --primary-color: #ee3fc2;
+  --secondary-color: #fff;
+  --hover-color: #fffdff;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+}
+
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  text-decoration: none;
+  
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+.button1 {
+ text-decoration: none;
+ position: absolute;
+ border: none;
+ font-size: 14px;
+ font-family: inherit;
+ color: #fff;
+ width: 9em;
+ height: 3em;
+ line-height: 2em;
+ text-align: center;
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 300%;
+ border-radius: 30px;
+ z-index: 1;
+}
+
+.button1:hover {
+ animation: ani 8s linear infinite;
+ border: none;
+}
+
+@keyframes ani {
+ 0% {
+  background-position: 0%;
+ }
+
+ 100% {
+  background-position: 400%;
+ }
+}
+
+.button1:before {
+ content: '';
+ position: absolute;
+ top: -5px;
+ left: -5px;
+ right: -5px;
+ bottom: -5px;
+ z-index: -1;
+ background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ background-size: 400%;
+ border-radius: 35px;
+ transition: 1s;
+}
+
+.button1:hover::before {
+ filter: blur(20px);
+}
+
+.button1:active {
+ background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+}
+       
+</style>
+</head>
+<body>
+  <header>
+     <h1>A website about beauty</h1>
+      <p style="text-align: right;
+      text-emphasis-position: bottom;
+      color: rgb(255, 255, 255); padding-right: 10px;"> -for my little girl </h1>   
+  </header>
+  <div>
+    <h2>
+      Life is a symphony of intricate melodies, a canvas of vibrant hues, and an infinite expanse of wonder. From the grandeur of the cosmos to the minute intricacies of the natural world, life is a masterpiece that continuously unfolds. The beauty of life lies in its diversity, its complexity, and its ability to surprise and inspire us. It is the delicate balance of opposites, the ebbs and flows of joy and sorrow, and the infinite potential for growth and transformation. Life is a precious gift that demands our attention, our curiosity, and our appreciation. To fully embrace the beauty of life is to find meaning, purpose, and joy in every moment 
+    </h2>
+  </div>
+  <div>
+    <button>
+      <a href="page1.html" style="text-decoration: none;">Finally Click Here</a>
+      <div class="arrow-wrapper">
+          <div class="arrow"></div>
+  
+      </div>
+    </button>
+    <button1 class="button1" style="position: absolute; bottom: 5%;
+    left: 2%;">
+      <a href="page2.html" style="text-decoration: none; color: #eee; text-align: center;"
+        >Click Here
+        <br>
+        ^
+      </a>
+    </div>    
+    </button1>
+</div>
+  </body>
+</html>
